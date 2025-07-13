@@ -10,9 +10,35 @@
             if (s.length <= 1) return s.length;
             int l = r = 0;
             Map<Character,Integer> hasSeen = new Hashmap;
-            while(r <= s.lenght)
+            while(r <= s.lenght) {
+               char currentChar = s[r];
+               int prevSeenIndex = hasSeen.getorDefault(currentChar, -1);
+               if (prevSeenIndex >= left) {
+                  left = prevSeenIndex + 1;
+               }
+               if(!hasSeen.Containkey(currentChar)) {
+                  hasSeen.put(currentChar, right);
+               }
+               maxLen = math.max(maxLen, R-L+1);
+            }
+            return maxLen;
          }
+         
+         Ex: LongestSubstringWithoutRepeatingCharacters_BySlidingWindow.java
+
+* Pattern Matching
+   - K.M.P Algorithm (Medium - To learn What is What)
+   - Z Algorithm (Easy to implement)
+   - Robi Kop Algorithm
+
+* In String 
+    Period means, ababab here ab*3
+
+* About Z-Algorithm - in String Its a Pattern matching Algorithm
+    Z Array -  At any Z array index longest prefix lenght can be made (See Image 12 of V12)
+    Z Algo - see images
 ```
+
 
 ## Images:
 ``` Images Folder - Available ```
@@ -36,9 +62,60 @@
 ![Image of V12](Images/(V12)%2018.png)
 ![Image of V12](Images/(V12)%2019.png)
 ![Image of V12](Images/(V12)%2020.png)
+![Image of V12](Images/(V12)%2021.png)
+![Image of V12](Images/(V12)%2022.png)
 
 ## Code:
+### LongestSubstringWithoutRepeatingCharacters_BySlidingWindow.java
+``` java
+import java.util.HashMap;
+import java.util.Map;
 
+public class LongestSubstringWithoutRepeatingCharacters_BySlidingWindow {
+    public int finalAns(String s) {
+        if (s.length() <= 1) return s.length();
+
+        int left = 0, right = 0;
+        int maxLen = 0;
+
+        Map<Character, Integer> hasSeen = new HashMap<>();
+
+        while (right < s.length()) {
+            char currentChar = s.charAt(right);
+            int prevSeenIndex = hasSeen.getOrDefault(currentChar, -1);
+
+            if (prevSeenIndex >= left) {
+                left = prevSeenIndex + 1;
+            }
+
+            hasSeen.put(currentChar, right);
+            maxLen = Math.max(maxLen, right - left + 1);
+            right++;
+        }
+
+        return maxLen;
+    }
+
+    public static void main(String[] args) {
+        LongestSubstringWithoutRepeatingCharacters_BySlidingWindow sol = new LongestSubstringWithoutRepeatingCharacters_BySlidingWindow();
+
+        System.out.println("Example 1: " + sol.finalAns("abcabcbb")); // Output: 3 ("abc")
+        System.out.println("Example 2: " + sol.finalAns("bbbbb"));    // Output: 1 ("b")
+        System.out.println("Example 3: " + sol.finalAns("pwwkew"));   // Output: 3 ("wke")
+        System.out.println("Example 4: " + sol.finalAns(""));         // Output: 0 (empty string)
+        System.out.println("Example 5: " + sol.finalAns("dvdf"));     // Output: 3 ("vdf")
+    }
+}
+
+/*  Output:
+$ java LongestSubstringWithoutRepeatingCharacters_BySlidingWindow 
+    Example 1: 3
+    Example 2: 1
+    Example 3: 3
+    Example 4: 0
+    Example 5: 3
+ */
+```
 
 
 ## Description Of V12 - String Part 2
