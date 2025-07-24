@@ -9,12 +9,14 @@
 
 * About Agian Container With Most Water Problem Explaination
 
+* Sliding Window
+    - Fixed Size
+    - Variable Size
 
+    * It is used for Subarray Problems
 
-
-
+* About Future DSA Content
 ```
-
 
 ## Images:
 ``` Images Folder - Available ```
@@ -28,23 +30,12 @@
 ![Image of V13](Images/(V13)%208.png)
 ![Image of V13](Images/(V13)%209.png)
 ![Image of V13](Images/(V13)%2010.png)
-![Image of V13](Images/(V13)%2011.png)
-![Image of V13](Images/(V13)%2012.png)
-![Image of V13](Images/(V13)%2013.png)
-![Image of V13](Images/(V13)%2014.png)
-![Image of V13](Images/(V13)%2015.png)
-![Image of V13](Images/(V13)%2016.png)
-![Image of V13](Images/(V13)%2017.png)
-![Image of V13](Images/(V13)%2018.png)
-![Image of V13](Images/(V13)%2019.png)
-![Image of V13](Images/(V13)%2020.png)
-![Image of V13](Images/(V13)%2021.png)
-![Image of V13](Images/(V13)%2022.png)
 
 ## Code:
-
+``` No Code Folder ```
 
 ## Description Of V13 - Arrays and Strings Final part Roadmap
+``` No Description ```
 
 
 
