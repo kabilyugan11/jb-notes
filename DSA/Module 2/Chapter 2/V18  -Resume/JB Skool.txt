@@ -1,0 +1,116 @@
+Second Batch Master DSA, HLD AND LLD. - 47%
+    Master DSA to solve complex problems with efficiency, LLD to design scalable and maintainable systems, 
+    and HLD to architect robust, high-performance solutions.
+
+
+Weekly Interactive Sessions
+    June_22_2025
+    Jul_6_2025
+    July_11_2025
+    July_12_2025
+    July_29_2025
+    Jul_30_2025
+    Aug_13_2025
+    Aug_22_2025
+    Aug_31_2025
+    May_05_2025
+
+Pre-Course
+    📣 Program Notifications
+    How to Take Notes Effectively ?
+    Essentials to learn before joining our program.
+    Leet Code Chrome Extensions
+
+Resources
+    Resources
+
+Language Fundamentals
+    Core C Syntax: Universal Guide for Programming
+    Java Programming Fundamentals
+    Java Script
+    Python Resources
+
+DSA Pre-requisites Lectures
+    DSA Intro Lecture
+    Static vs Dynamic Memory-1
+    Static Vs Dynamic Memory-2
+    Master DSA and Coding Fundamentals
+
+All Weekly Live sessions
+    Welcome Meet May 24 Session Link
+    Live 2 - June 1
+    June 7 Weekly Live session
+    July 6 - Notes discussion session
+
+DOUBT FORM
+    DOUBT FORM
+
+MODULE 1
+    WEEK 1
+        Arrays Part 1
+        Arrays Part 2
+        MCQ TEST
+        Live Session
+
+    WEEK 2
+        Hashing Part 1
+        How Logarithm Works ? (Understand Deeply)
+        Time Complexity Analysis Part I
+        Time Complexity Analysis Part II
+        MCQ TEST
+        Live Session
+
+    WEEK 3
+        String Part 1
+        String Part 2
+        MCQ TEST
+        Live Session
+
+    WEEK 4
+        OOPS PART 1
+        SOLID OOPS PART 2
+        Class and DB Schema Design
+        📚 Homework Video – Must-Watch!
+        MCQ TEST
+        Live Session
+
+    WEEK 5
+        Arrays and Strings Final part Roadmap
+        Sliding window ( Fixed size)
+        Sliding Windo ( Varibale size)
+        MCQ TEST
+        Dutch National Flag (Partioning)
+        Master Hashset and Hashmap
+
+Drill 1
+    📅 DSA Drill 1 — Week Agenda
+    Zoho Meet 1 (Key Concepts and Drill Focus)
+    Zoho Meet 2 (Core Strategies for Interview Prep)
+
+MODULE 2
+    WEEK 1
+        Dynamic Arrays Vs Linked Lists And CRUD Operations
+        Linked List Masterclass – Part 1: Problems
+        Linked List Part 2
+        Merge
+        MCQ TEST
+
+    WEEK 2
+        Stack Queues Part 1
+        Stacks Part 2
+        String pattern matching
+        MCQ TEST
+
+    WEEK 3
+        Queues Part 1
+        Queues Part 2
+        Prime number - Sieve Algo
+        MCQ TEST
+
+BUFFER VIDEOS
+    Zoho Placement Update
+    Techstack workflow
+    Recursion
+    DBMS - Part 1
+    How to Master Recursion
+    New page

@@ -21,8 +21,8 @@
 
     Stack means Last in First Out
 
-    It is based on Complier Time 
-    So its called as Compiler Time Memory or Static Memory or Stack Memory
+    Stack -> It is based on Complier Time 
+             So its called as Compiler Time Memory or Static Memory or Stack Memory
 ```
 
 ## Images:

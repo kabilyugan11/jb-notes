@@ -122,7 +122,7 @@ import java.util.Arrays;
 class numArray{
     public int findMax(int[] array) {
         System.out.println("Array : " + Arrays.toString(array));
-        //int max = 0;  //it cannot find Negative numbers for findMax
+        //int max = 0;  //it cannot find Negative numbers for findMax (because 0 is larger than all negative numbers)
         int max = array[0];
         for (int i = 1; i < array.length; i++) {
             int currentElememt = array[i];
@@ -140,7 +140,7 @@ public class Find_Max_Element_inArray {
         //int[] array = {7,8,2,9,5,3};
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Number of Elements : ");
+        System.out.print("Number of Elements : ");
         int size = scanner.nextInt();
 
         int[] array = new int[size];
@@ -159,8 +159,7 @@ public class Find_Max_Element_inArray {
 
 /*  Output:
     $ java Find_Max_Element_inArray
-    Number of Elements : 
-    5
+    Number of Elements : 5
     Enter 5 Elements: 
     -1
     0

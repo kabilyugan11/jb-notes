@@ -22,7 +22,7 @@
 * DS Topics:
     Array, Matrics, Linked lists -> Physical DS (Determine how to store in physically in memeory) 
 
-    Stack, Queue, Trees, Graphs, Hasing -> Logical DS (Apply logics on Top of physical)
+    Stack, Queue, Trees, Graphs, Hashing -> Logical DS (Apply logics on Top of physical)
 
     Recursion:
         Using it in small only in Coding/Programming
