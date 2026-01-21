@@ -1,4 +1,4 @@
-# Video 8 - How Logarithm Works ? (Understand Deeply)
+# Video 7a - How Logarithm Works ? (Understand Deeply)
 
 ## My_Notes:
 ```
@@ -20,22 +20,22 @@
 
 ## Images:
 ``` Images Folder - Available ```
-![Image of V8](Images/(V8)%201.png)
-![Image of V8](Images/(V8)%202.png)
-![Image of V8](Images/(V8)%203.png)
-![Image of V8](Images/(V8)%204.png)
-![Image of V8](Images/(V8)%205.png)
-![Image of V8](Images/(V8)%206.png)
-![Image of V8](Images/(V8)%207.png)
-![Image of V8](Images/(V8)%208.png)
-![Image of V8](Images/(V8)%209.png)
-![Image of V8](Images/(V8)%2010.png)
-![Image of V8](Images/(V8)%2011.png)
+![Image of V7a](Images/(V7a)%201.png)
+![Image of V7a](Images/(V7a)%202.png)
+![Image of V7a](Images/(V7a)%203.png)
+![Image of V7a](Images/(V7a)%204.png)
+![Image of V7a](Images/(V7a)%205.png)
+![Image of V7a](Images/(V7a)%206.png)
+![Image of V7a](Images/(V7a)%207.png)
+![Image of V7a](Images/(V7a)%208.png)
+![Image of V7a](Images/(V7a)%209.png)
+![Image of V7a](Images/(V7a)%2010.png)
+![Image of V7a](Images/(V7a)%2011.png)
 
 ## Code:
 ``` No Code Folder ```
 
-## Description Of V8 - How Logarithm Works ? (Understand Deeply)
+## Description Of V7a - How Logarithm Works ? (Understand Deeply)
 ## **Logarithm Doubt Form**
 
 Please use the following link to access the form and submit your queries related to the "Logarithm" topic: [https://forms.gle/cZpVDu3LutHaqwE58](https://forms.gle/cZpVDu3LutHaqwE58 "https://forms.gle/cZpVDu3LutHaqwE58")

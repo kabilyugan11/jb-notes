@@ -1,36 +1,33 @@
-# Video 6 - Arrays Part 2
+# Video 8 - Arrays Part 2
 
 ## My_Notes:
 ```
-* Dynamic Arrays:
-    1.Initial Capacity, Load Factor
-    2.Once threshold reached, Creates an 2X size array and Copy
-        Array size 100, if it reaches 50 or 100 then it creates size 200 and copy
+* Array is only limited
+* Dynamic Arrays: (Arrary List)
+    It is not limited 
+        1.Initial Capacity, Load Factor
+        2.Once threshold reached, Creates an 2X size array and Copy
+            Array size 100, if it reaches 50 or 100 then it creates size 200 and copy
 
-    Avg time complexity of list Dynamic array insertion is approx O(N)
+        Avg time complexity of list Dynamic array insertion is approx O(N)
 
 * About Pre-Processing -> One Type of Pattern in Array
     SubarraySum_Bruteforce.java -> BruteForce
     PrefixSum_PreProcess.java -> PreProcess by PrefixSum
 
-
-
-
-
-
-
+* 2D Prefix Sum - See images (i am not write code)
 ```
 
 ## Images:
 ``` Images Folder - Available ```
-![Image of V6](Images/(V6)%201.png)
-![Image of V6](Images/(V6)%202.png)
-![Image of V6](Images/(V6)%203.png)
-![Image of V6](Images/(V6)%204.png)
-![Image of V6](Images/(V6)%205.png)
-![Image of V6](Images/(V6)%206.png)
-![Image of V6](Images/(V6)%207.png)
-![Image of V6](Images/(V6)%208.png)
+![Image of V8](Images/(V8)%201.png)
+![Image of V8](Images/(V8)%202.png)
+![Image of V8](Images/(V8)%203.png)
+![Image of V8](Images/(V8)%204.png)
+![Image of V8](Images/(V8)%205.png)
+![Image of V8](Images/(V8)%206.png)
+![Image of V8](Images/(V8)%207.png)
+![Image of V8](Images/(V8)%208.png)
 
 ## Code:
 ### SubarraySum_Bruteforce.java
@@ -96,7 +93,7 @@ public class PrefixSum_PreProcess {
  */
 ```
 
-## Description Of V6 - Arrays Part 2
+## Description Of V8 - Arrays Part 2
 
 
 

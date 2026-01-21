@@ -1,4 +1,4 @@
-# Video 10 - Time Complexity Analysis Part II
+# Video 7b - Time Complexity Analysis Part II
 
 ## My_Notes:
 ```
@@ -9,30 +9,30 @@
 
 ## Images:
 ``` Images Folder - Available ```
-![Image of V10](Images/(V10)%201.png)
-![Image of V10](Images/(V10)%202.png)
-![Image of V10](Images/(V10)%203.png)
-![Image of V10](Images/(V10)%204.png)
-![Image of V10](Images/(V10)%205.png)
-![Image of V10](Images/(V10)%206.png)
-![Image of V10](Images/(V10)%207.png)
-![Image of V10](Images/(V10)%208.png)
-![Image of V10](Images/(V10)%209.png)
-![Image of V10](Images/(V10)%2010.png)
-![Image of V10](Images/(V10)%2011.png)
-![Image of V10](Images/(V10)%2012.png)
-![Image of V10](Images/(V10)%2013.png)
-![Image of V10](Images/(V10)%2014.png)
-![Image of V10](Images/(V10)%2015.png)
-![Image of V10](Images/(V10)%2016.png)
-![Image of V10](Images/(V10)%2017.png)
-![Image of V10](Images/(V10)%2018.png)
-![Image of V10](Images/(V10)%2019.png)
+![Image of V7b](Images/(V7b)%201.png)
+![Image of V7b](Images/(V7b)%202.png)
+![Image of V7b](Images/(V7b)%203.png)
+![Image of V7b](Images/(V7b)%204.png)
+![Image of V7b](Images/(V7b)%205.png)
+![Image of V7b](Images/(V7b)%206.png)
+![Image of V7b](Images/(V7b)%207.png)
+![Image of V7b](Images/(V7b)%208.png)
+![Image of V7b](Images/(V7b)%209.png)
+![Image of V7b](Images/(V7b)%2010.png)
+![Image of V7b](Images/(V7b)%2011.png)
+![Image of V7b](Images/(V7b)%2012.png)
+![Image of V7b](Images/(V7b)%2013.png)
+![Image of V7b](Images/(V7b)%2014.png)
+![Image of V7b](Images/(V7b)%2015.png)
+![Image of V7b](Images/(V7b)%2016.png)
+![Image of V7b](Images/(V7b)%2017.png)
+![Image of V7b](Images/(V7b)%2018.png)
+![Image of V7b](Images/(V7b)%2019.png)
 
 ## Code:
 ``` No Code Folder ```
 
-## Description Of V10 - Time Complexity Analysis Part II:
+## Description Of V7b - Time Complexity Analysis Part II:
 **Time Complexity Part 2 - Doubt Form**  
 Submit your doubts on advanced time complexity topics here: [https://forms.gle/cAnk6K4omAPq5U176](https://forms.gle/cAnk6K4omAPq5U176 "https://forms.gle/cAnk6K4omAPq5U176")
 

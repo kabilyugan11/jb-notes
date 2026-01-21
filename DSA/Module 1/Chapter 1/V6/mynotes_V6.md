@@ -1,4 +1,4 @@
-# Video 9 - Time Complexity Analysis Part I
+# Video 6 - Time Complexity Analysis Part I
 
 ## My_Notes:
 ```
@@ -42,44 +42,58 @@
             = 5 + 4 + 3 + 2 + 1
             = 15
 
+* find F(n)
+    f(N) = 3N + 3 ---> O(n) -> how means, drop 3 and +3 it becomes N
+        int sum = 0;          // 1 operation
+        int i;                // 1 operation
+        for (i = 0; i < N; i++) {   // runs N times
+            sum += i;
+        }
+        for (i = 0; i < N; i++) {   // runs N times
+            sum += i;
+        }
+        for (i = 0; i < N; i++) {   // runs N times
+            sum += i;
+        }
+        return sum;           // 1 operation
 
 * See Images
 ```
 
 ## Images:
 ``` Images Folder - Available ```
-![Image of V9](Images/(V9)%201.png)
-![Image of V9](Images/(V9)%202.png)
-![Image of V9](Images/(V9)%203.png)
-![Image of V9](Images/(V9)%204.png)
-![Image of V9](Images/(V9)%205.png)
-![Image of V9](Images/(V9)%206.png)
-![Image of V9](Images/(V9)%207.png)
-![Image of V9](Images/(V9)%208.png)
-![Image of V9](Images/(V9)%209.png)
-![Image of V9](Images/(V9)%2010.png)
-![Image of V9](Images/(V9)%2011.png)
-![Image of V9](Images/(V9)%2012.png)
-![Image of V9](Images/(V9)%2013.png)
-![Image of V9](Images/(V9)%2014.png)
-![Image of V9](Images/(V9)%2015.png)
-![Image of V9](Images/(V9)%2016.png)
-![Image of V9](Images/(V9)%2017.png)
-![Image of V9](Images/(V9)%2018.png)
-![Image of V9](Images/(V9)%2019.png)
-![Image of V9](Images/(V9)%2020.png)
-![Image of V9](Images/(V9)%2021.png)
-![Image of V9](Images/(V9)%2022.png)
-![Image of V9](Images/(V9)%2023.png)
-![Image of V9](Images/(V9)%2024.png)
-![Image of V9](Images/(V9)%2025.png)
-![Image of V9](Images/(V9)%2026.png)
-![Image of V9](Images/(V9)%2027.png)
+![Image of V6](Images/(V6)%201.png)
+![Image of V6](Images/(V6)%202.png)
+![Image of V6](Images/(V6)%203.png)
+![Image of V6](Images/(V6)%204.png)
+![Image of V6](Images/(V6)%205.png)
+![Image of V6](Images/(V6)%206.png)
+![Image of V6](Images/(V6)%207.png)
+![Image of V6](Images/(V6)%208.png)
+![Image of V6](Images/(V6)%209.png)
+![Image of V6](Images/(V6)%2010.png)
+![Image of V6](Images/(V6)%2011.png)
+![Image of V6](Images/(V6)%2012.png)
+![Image of V6](Images/(V6)%2013.png)
+![Image of V6](Images/(V6)%2014.png)
+![Image of V6](Images/(V6)%2015.png)
+![Image of V6](Images/(V6)%2016.png)
+![Image of V6](Images/(V6)%2017.png)
+![Image of V6](Images/(V6)%2018.png)
+![Image of V6](Images/(V6)%2019.png)
+![Image of V6](Images/(V6)%2020.png)
+![Image of V6](Images/(V6)%2021.png)
+![Image of V6](Images/(V6)%2022.png)
+![Image of V6](Images/(V6)%2023.png)
+![Image of V6](Images/(V6)%2024.png)
+![Image of V6](Images/(V6)%2025.png)
+![Image of V6](Images/(V6)%2026.png)
+![Image of V6](Images/(V6)%2027.png)
 
 ## Code:
 ``` No Code Folder ```
 
-## Description Of V9 - Time Complexity Analysis Part I:
+## Description Of V6 - Time Complexity Analysis Part I:
 **Comprehensive Breakdown of a Technical Presentation: From Instructions to Advanced Mathematical Concepts**
 
 **Cheat sheet -** [https://www.bigocheatsheet.com/?fbclid=PAY2xjawHNMcBleHRuA2FlbQIxMAABpuDzL5VuLANCTGkG3yLQvymPj589mHo8VZGwENA2YAHYgxv2LH9IvTXn5g\_aem\_j9BUXzTQy-9dNU9-UdKzwg](https://www.bigocheatsheet.com/?fbclid=PAY2xjawHNMcBleHRuA2FlbQIxMAABpuDzL5VuLANCTGkG3yLQvymPj589mHo8VZGwENA2YAHYgxv2LH9IvTXn5g_aem_j9BUXzTQy-9dNU9-UdKzwg "https://www.bigocheatsheet.com/?fbclid=PAY2xjawHNMcBleHRuA2FlbQIxMAABpuDzL5VuLANCTGkG3yLQvymPj589mHo8VZGwENA2YAHYgxv2LH9IvTXn5g_aem_j9BUXzTQy-9dNU9-UdKzwg")

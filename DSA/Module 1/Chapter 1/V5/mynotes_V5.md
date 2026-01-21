@@ -258,7 +258,7 @@ public class PairSum3_Hashing {
                 System.out.println("Pair: (" + ntf + ", " + current + ")" + " = " + target);
             }
 
-            // Store current element in map (5, 0)
+            // Store current element in map (5, 0) -> (current, key)
             map.put(current, i);
             //System.out.println(map); //just print entire map
 
@@ -266,7 +266,7 @@ public class PairSum3_Hashing {
     }
 }
 
-/*  Explaination:
+/*  Explaination: arr = {5, 2, 7, 4, 3, 8}
     First number is 5:
         ntf = 10 - 5 = 5
         Map is empty, so no pair yet.
@@ -305,7 +305,7 @@ public class PairSum3_Hashing {
  */
 ```
 
-### LargestWaterContainer.java
+### LargestWaterContainer.java (Note : Between the Any Two walls | Note : Wall is negligible for calculation) //See Image
 ``` java
 public class LargestWaterContainer {
 
@@ -325,8 +325,8 @@ public class LargestWaterContainer {
         for (int i = 0; i < height.length; i++) {
             for (int j = i + 1; j < height.length; j++) {
                 int minHeight = Math.min(height[i], height[j]);
-                int width = j - i;
-                int currentWater = minHeight * width;
+                int length = j - i;
+                int currentWater = minHeight * length;
                 max = Math.max(max, currentWater);
             }
         }
@@ -340,9 +340,9 @@ public class LargestWaterContainer {
         int maxWater = 0;
 
         while (left < right) {
-            int width = right - left;
+            int length = right - left;
             int minHeight = Math.min(height[left], height[right]);
-            int currentWater = minHeight * width;
+            int currentWater = minHeight * length;
 
             // update max water
             maxWater = Math.max(maxWater, currentWater);
@@ -366,7 +366,51 @@ public class LargestWaterContainer {
  */
 ```
 
-### TrappingRainWater.java
+### containerWithMostWater.java //HW Problem
+```java
+import java.util.Arrays;
+
+class containerWithMostWater {
+    public int maxArea(int[] height) {
+        int l = 0;
+        int r = height.length-1;
+        int maxW = 0; //maxW -> Maximum Water
+        while(l<r) {
+            int area = Math.min(height[l], height[r]) * (r-l); // Area = Height * length
+            maxW = Math.max(maxW, area);
+            int minPointer = Math.min(height[l],height[r]);
+            if(minPointer ==  height[l]) {
+                l++;
+            } else {
+                r--;
+            }
+        }
+        return maxW;
+    }
+
+    public static void main(String[] args) {
+        containerWithMostWater objCWMW = new containerWithMostWater();
+
+        int[] arr = {1,8,6,2,5,4,8,3,7};
+        System.out.println(Arrays.toString(arr));
+        System.out.println("Max : " + objCWMW.maxArea(arr));
+
+        int[] arr2 = {1,1};
+        System.out.println(Arrays.toString(arr2));
+        System.out.println("Max : " + objCWMW.maxArea(arr2));
+    }
+}
+
+/*  Output:
+    $ java containerWithMostWater
+    [1, 8, 6, 2, 5, 4, 8, 3, 7]
+    Max : 49
+    [1, 1]
+    Max : 1
+ */
+```
+
+### TrappingRainWater.java // Total Water in City
 ``` java
 public class TrappingRainWater {
     public int trap(int[] height) {
@@ -410,138 +454,7 @@ public class TrappingRainWater {
  */
 ```
 
-### findMaximumInArray.java
-``` java
-class findMaximumInArray {
-    public static int largest(int[] arr) {
-        int max = arr[0];
-        for (int i = 1; i < arr.length; i++) { 
-            max = arr[i]; 
-        }
-        return max; 
-    }
-
-    public static void main(String[] args) {
-        int[] arr1 = {1, 8, 7, 56, 90};
-        int[] arr2 = {5, 5, 5, 5};
-        int[] arr3 = {10};
-
-        System.out.println("Max Of arr1 = {1, 8, 7, 56, 90} = " + findMaximumInArray.largest(arr1));
-        System.out.println("Max Of arr2 = {5, 5, 5, 5}; = " + findMaximumInArray.largest(arr2));
-        System.out.println("Max Of arr3 = {10}; = " + findMaximumInArray.largest(arr3));
-    }
-}
-
-/*  Output:
-    $ java findMaximumInArray 
-    Max Of arr1 = {1, 8, 7, 56, 90} = 90
-    Max Of arr2 = {5, 5, 5, 5}; = 5
-    Max Of arr3 = {10}; = 10
- */
-```
-
-### squareSum.java
-``` java
-/*  Description of Leetcode:
-    Sum of Square Numbers
-    Medium
-    Given a non-negative integer c, decide whether there're two integers a and b such that a2 + b2 = c.
-
-    Example 1:
-    Input: c = 5
-    Output: true
-    Explanation: 1 * 1 + 2 * 2 = 5
-    Example 2:
-
-    Input: c = 3
-    Output: false
-    
-    Constraints:
-    0 <= c <= 231 - 1
- */
-
-public class squareSum {
-    public boolean judgeSquareSum(int c) {
-        long left = 0;
-        long right = (long)Math.sqrt(c);
-
-        while (left <= right) {
-            long sum = (left * left) + (right * right);
-
-            if (sum == c) {
-                return true;
-            }
-            else if (sum < c){
-                left++;
-            }
-            else {
-                right --;
-            }
-        }
-        return false;
-    }
-
-    public static void main(String[] args) {
-        int c1 = 5;
-        int c2 = 3;
-        squareSum sqrSumObj = new squareSum();
-
-        System.out.println("c1 = 5 => " + sqrSumObj.judgeSquareSum(c1));
-        System.out.println("c1 = 3 => " + sqrSumObj.judgeSquareSum(c2));
-    }
-}
-
-/*  Output:
-    $ java squareSum
-    c1 = 5 => true
-    c1 = 3 => false
- */
-```
-
-### containerWithMostWater.java
-```java
-import java.util.Arrays;
-
-class containerWithMostWater {
-    public int maxArea(int[] height) {
-        int l = 0;
-        int r = height.length-1;
-        int maxW = 0; //maxW -> Maximum Water
-        while(l<r) {
-            int area = Math.min(height[l], height[r]) * (r-l); // Area = Height * Width
-            maxW = Math.max(maxW, area);
-            if(height[l]<height[r]) {
-                l++;
-            } else {
-                r--;
-            }
-        }
-        return maxW;
-    }
-
-    public static void main(String[] args) {
-        containerWithMostWater objCWMW = new containerWithMostWater();
-
-        int[] arr = {1,8,6,2,5,4,8,3,7};
-        System.out.println(Arrays.toString(arr));
-        System.out.println("Max : " + objCWMW.maxArea(arr));
-
-        int[] arr2 = {1,1};
-        System.out.println(Arrays.toString(arr2));
-        System.out.println("Max : " + objCWMW.maxArea(arr2));
-    }
-}
-
-/*  Output:
-    $ java containerWithMostWater
-    [1, 8, 6, 2, 5, 4, 8, 3, 7]
-    Max : 49
-    [1, 1]
-    Max : 1
- */
-```
-
-### trappingRainWater.java
+### trappingRainWater.java //HW Problem 
 ``` java
 public class trappingRainWater {
 
@@ -630,6 +543,94 @@ $ java trappingRainWater
     Using Optimized Two-Pointer Approach:
     array 1 Output: 6
     array 2 Output: 9
+ */
+```
+
+### findMaximumInArray.java
+``` java
+class findMaximumInArray {
+    public static int largest(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) { 
+            max = arr[i]; 
+        }
+        return max; 
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {1, 8, 7, 56, 90};
+        int[] arr2 = {5, 5, 5, 5};
+        int[] arr3 = {10};
+
+        System.out.println("Max Of arr1 = {1, 8, 7, 56, 90} = " + findMaximumInArray.largest(arr1));
+        System.out.println("Max Of arr2 = {5, 5, 5, 5}; = " + findMaximumInArray.largest(arr2));
+        System.out.println("Max Of arr3 = {10}; = " + findMaximumInArray.largest(arr3));
+    }
+}
+
+/*  Output:
+    $ java findMaximumInArray 
+    Max Of arr1 = {1, 8, 7, 56, 90} = 90
+    Max Of arr2 = {5, 5, 5, 5}; = 5
+    Max Of arr3 = {10}; = 10
+ */
+```
+
+### squareSum.java
+``` java
+/*  Description of Leetcode:
+    Sum of Square Numbers
+    Medium
+    Given a non-negative integer c, decide whether there're two integers a and b such that a2 + b2 = c.
+
+    Example 1:
+    Input: c = 5
+    Output: true
+    Explanation: 1 * 1 + 2 * 2 = 5
+    Example 2:
+
+    Input: c = 3
+    Output: false
+    
+    Constraints:
+    0 <= c <= 231 - 1
+ */
+
+public class squareSum {
+    public boolean judgeSquareSum(int c) {
+        long left = 0;
+        long right = (long)Math.sqrt(c);
+
+        while (left <= right) {
+            long sum = (left * left) + (right * right);
+
+            if (sum == c) {
+                return true;
+            }
+            else if (sum < c){
+                left++;
+            }
+            else {
+                right --;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int c1 = 5;
+        int c2 = 3;
+        squareSum sqrSumObj = new squareSum();
+
+        System.out.println("c1 = 5 => " + sqrSumObj.judgeSquareSum(c1));
+        System.out.println("c1 = 3 => " + sqrSumObj.judgeSquareSum(c2));
+    }
+}
+
+/*  Output:
+    $ java squareSum
+    c1 = 5 => true
+    c1 = 3 => false
  */
 ```
 
